@@ -12,6 +12,9 @@
 		D88A0FE41CC83FBD009EF0E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88A0FE21CC83FBD009EF0E2 /* Main.storyboard */; };
 		D88A0FE61CC83FBD009EF0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88A0FE51CC83FBD009EF0E2 /* Assets.xcassets */; };
 		D88A0FE91CC83FBD009EF0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88A0FE71CC83FBD009EF0E2 /* LaunchScreen.storyboard */; };
+		D88A0FF41CC8726E009EF0E2 /* btnIsOpaque.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88A0FF31CC8726E009EF0E2 /* btnIsOpaque.swift */; };
+		D88A0FF61CC878D4009EF0E2 /* AboutKyoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88A0FF51CC878D4009EF0E2 /* AboutKyoto.swift */; };
+		D88A0FF81CC878EB009EF0E2 /* KyotoInPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88A0FF71CC878EB009EF0E2 /* KyotoInPhotos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		D88A0FE51CC83FBD009EF0E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D88A0FE81CC83FBD009EF0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D88A0FEA1CC83FBD009EF0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D88A0FF31CC8726E009EF0E2 /* btnIsOpaque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = btnIsOpaque.swift; sourceTree = "<group>"; };
+		D88A0FF51CC878D4009EF0E2 /* AboutKyoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutKyoto.swift; sourceTree = "<group>"; };
+		D88A0FF71CC878EB009EF0E2 /* KyotoInPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KyotoInPhotos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		D88A0FDD1CC83FBD009EF0E2 /* KyotoIsMyPlace */ = {
 			isa = PBXGroup;
 			children = (
+				D88A0FF11CC86EEF009EF0E2 /* Model */,
+				D88A0FF01CC86EE6009EF0E2 /* Controller */,
+				D88A0FF21CC86EFD009EF0E2 /* View */,
 				D88A0FDE1CC83FBD009EF0E2 /* AppDelegate.swift */,
-				D88A0FE01CC83FBD009EF0E2 /* ViewController.swift */,
-				D88A0FE21CC83FBD009EF0E2 /* Main.storyboard */,
 				D88A0FE51CC83FBD009EF0E2 /* Assets.xcassets */,
 				D88A0FE71CC83FBD009EF0E2 /* LaunchScreen.storyboard */,
 				D88A0FEA1CC83FBD009EF0E2 /* Info.plist */,
 			);
 			path = KyotoIsMyPlace;
+			sourceTree = "<group>";
+		};
+		D88A0FF01CC86EE6009EF0E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D88A0FE01CC83FBD009EF0E2 /* ViewController.swift */,
+				D88A0FF51CC878D4009EF0E2 /* AboutKyoto.swift */,
+				D88A0FF71CC878EB009EF0E2 /* KyotoInPhotos.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D88A0FF11CC86EEF009EF0E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D88A0FF21CC86EFD009EF0E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D88A0FE21CC83FBD009EF0E2 /* Main.storyboard */,
+				D88A0FF31CC8726E009EF0E2 /* btnIsOpaque.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88A0FF61CC878D4009EF0E2 /* AboutKyoto.swift in Sources */,
+				D88A0FF81CC878EB009EF0E2 /* KyotoInPhotos.swift in Sources */,
 				D88A0FE11CC83FBD009EF0E2 /* ViewController.swift in Sources */,
 				D88A0FDF1CC83FBD009EF0E2 /* AppDelegate.swift in Sources */,
+				D88A0FF41CC8726E009EF0E2 /* btnIsOpaque.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
